@@ -688,7 +688,7 @@ h3 {
 /* Mobile margins for FAQ section */
 @media (max-width: 768px) {
     .faq .container {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 }
 
@@ -708,7 +708,7 @@ h3 {
     background: #ede9dd;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     overflow: hidden;
     transition: all 0.3s ease;
 }
@@ -1128,7 +1128,7 @@ h3 {
     
     
     .faq-question h3 {
-        font-size: 2rem;
+        font-size: 2.05rem;
         line-height: 1.2;
     }
     
@@ -1240,7 +1240,7 @@ h3 {
     }
     
     .recommendations-section h2 {
-        font-size: 3rem;
+        font-size: 6.5rem;
         font-weight: 400;
         text-align: center;
     }
@@ -1271,7 +1271,8 @@ h3 {
     }
     
     .recommendation-content h3 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        font-weight: 400;
         text-align: center;
         margin-bottom: 0.5rem;
     }
@@ -1403,7 +1404,7 @@ h3 {
     
     
     .faq-question h3 {
-        font-size: 2rem;
+        font-size: 2.05rem;
         line-height: 1.1;
     }
     
@@ -1460,7 +1461,7 @@ h3 {
     
     /* Recommendations Page Small Mobile */
     .recommendations-section h2 {
-        font-size: 2.5rem;
+        font-size: 4.5rem;
     }
     
     .recommendation-item {
@@ -1475,7 +1476,8 @@ h3 {
     }
     
     .recommendation-content h3 {
-        font-size: 1.6rem;
+        font-size: 2rem;
+        font-weight: 400;
     }
     
     .recommendation-address,
