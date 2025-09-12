@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coral y Alejandro - 03 de enero 2026</title>
+    <link rel="icon" type="image/png" href="AC.png">
+    <link rel="shortcut icon" type="image/png" href="AC.png">
+    <link rel="apple-touch-icon" href="AC.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="#hero">
+                    <img src="AC.png" alt="C&A" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero">La Boda</a></li>
+                    <li><a href="#nuestro-dia">Nuestro día</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#asistencia">Asistencia</a></li>
+                    <li><a href="#preguntas">Preguntas</a></li>
+                    <li><a href="#regalo">Regalo</a></li>
+                    <li><a href="#recomendaciones">Recomendaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-image">
+            <img src="1.1.jpeg" alt="Coral y Alejandro" class="hero-img">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Coral y Alejandro</h1>
+        </div>
+        <div class="hero-info">
+            <p class="hero-date">03 de enero de 2026</p>
+            <p class="hero-location">BARCELONA</p>
+        </div>
+    </section>
+
+    <!-- Wedding Details -->
+    <section class="wedding-details" id="nuestro-dia">
+        <div class="container">
+            <div class="ceremony">
+                <div class="ceremony-image">
+                    <img src="SanV.jpg" alt="Parroquia de Sant Vicenç de Sarrià" class="venue-img">
+                </div>
+                <h2>Ceremonia</h2>
+                <div class="time">12:00 h</div>
+                <div class="location">Parroquia de Sant Vicenç de Sarrià</div>
+                <div class="address">Carrer de Sant Vicenç, 1, 08017 Barcelona</div>
+                <a href="https://maps.app.goo.gl/bdCrfoWgFe8tUrfu6" target="_blank" class="directions-btn">Cómo llegar</a>
+            </div>
+            
+            <div class="celebration">
+                <div class="celebration-image">
+                    <img src="Centenaria.jpg" alt="La Centenaria" class="venue-img">
+                </div>
+                <h2>Celebración</h2>
+                <div class="time">14:00 h</div>
+                <div class="location">La Centenaria</div>
+                <div class="address">Gavà, Barcelona</div>
+                <a href="https://maps.app.goo.gl/hsDDVv1UYaaRn5hf7" target="_blank" class="directions-btn">Cómo llegar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="schedule" id="horarios">
+        <div class="container">
+            <h2>Horarios</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="Iglesia.svg" alt="Iglesia" class="icon-img">
+                    </div>
+                    <h3>Ceremonia</h3>
+                    <div class="time">12:00 h</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="Bus.svg" alt="Bus" class="icon-img">
+                    </div>
+                    <h3>Bus de ida</h3>
+                    <div class="time">13:10 h</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="Pastel.svg" alt="Pastel" class="icon-img">
+                    </div>
+                    <h3>Celebración</h3>
+                    <div class="time">14:00 h</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-icon">
+                        <img src="Bus.svg" alt="Bus" class="icon-img">
+                    </div>
+                    <h3>Bus de vuelta</h3>
+                    <div class="time">00:30 h</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Form -->
+    <section class="rsvp" id="asistencia">
+        <div class="container">
+            <h2>Confirma tu asistencia</h2>
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="apellidos">Apellidos*</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="acompanante">Nombre y Apellidos acompañante</label>
+                    <input type="text" id="acompanante" name="acompanante">
+                </div>
+                
+                <div class="form-group">
+                    <label>¿Asistirás el 3 de enero?*</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="asistencia" value="Sí, asistiré" required>
+                            <span class="radio-custom"></span>
+                            Sí, asistiré
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="asistencia" value="No, no podré asistir" required>
+                            <span class="radio-custom"></span>
+                            No, no podré asistir
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>¿Irás en autocar?*</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="autocar" value="Sí, iré en autocar" required>
+                            <span class="radio-custom"></span>
+                            Sí, iré en autocar
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="autocar" value="No, iré por mi cuenta" required>
+                            <span class="radio-custom"></span>
+                            No, iré por mi cuenta
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="intolerancias">Intolerancias y alergias alimentarias</label>
+                    <textarea id="intolerancias" name="intolerancias" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cancion">Canción que no puede faltar</label>
+                    <input type="text" id="cancion" name="cancion">
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+            
+            <p class="rsvp-note">*Confirmación antes del 31 de octubre 2025</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="preguntas">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es el dress code?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Hombres:</strong> Traje oscuro y camisa clara con zapato.<br>
+                        <strong>Mujeres:</strong> Dejad el blanco para la Novia.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Desde dónde sale y a dónde regresa el autocar?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El autocar os recogerá al salir de la iglesia, en Reina Elisenda. Y a la vuelta realizará dos paradas, la primera en Calle Balmes (esquina General Mitre) y la segunda en Plaza de Francesc Macià.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Hay sitio para aparcar?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, hay un parquing BSM Porta de Sarrià muy cerca de la iglesia, en la Calle de Salvador Mundí, 17.<br>
+                        Y en la Centenaria también tenéis una zona para aparcar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es la fecha límite para confirmar?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Os agradeceríamos que nos confirmarais antes del 31 de Octubre.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Otras preguntas?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Si tenéis cualquier otra pregunta, escribidnos a nuestros teléfonos:<br>
+                        <strong>Coral:</strong> 662 128 700<br>
+                        <strong>Alejandro:</strong> 650 859 996</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section class="gift" id="regalo">
+        <div class="container">
+            <h2>El mejor regalo es poder compartir este día con vosotros</h2>
+            <h2 class="mobile-title">El mejor regalo es<br>poder compartir este día<br>con vosotros</h2>
+            <p>Pero si queréis ayudarnos en esta nueva etapa juntos podéis hacerlo en este número de cuenta:</p>
+            <div class="bank-account">
+                <span>ES82 2100 0808 1501 0375 8830</span>
+                <button class="copy-btn" onclick="copyToClipboard('ES82 2100 0808 1501 0375 8830')">
+                    <i class="fas fa-copy"></i> Copiar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="recommendations" id="recomendaciones">
+        <div class="container">
+            <h2>Una vez estés aquí</h2>
+            <p class="recommendations-intro">Os dejamos unas cuantas recomendaciones para que disfrutéis de vuestra estancia en Barcelona</p>
+            
+            <div class="recommendations-grid">
+                <div class="recommendation-category" id="hoteles">
+                    <h3>Hoteles</h3>
+                    <div class="recommendation-content">
+                        <p>Aquí encontrarás nuestras recomendaciones de hoteles cercanos a los lugares de la boda.</p>
+                        <a href="recomendaciones.html" class="explore-btn">Explora</a>
+                    </div>
+                </div>
+                
+                <div class="recommendation-category" id="peluquerias">
+                    <h3>Peluquerías</h3>
+                    <div class="recommendation-content">
+                        <p>Salones de belleza recomendados para el día de la boda.</p>
+                        <a href="recomendaciones.html" class="explore-btn">Explora</a>
+                    </div>
+                </div>
+                
+                <div class="recommendation-category" id="restaurantes">
+                    <h3>Restaurantes</h3>
+                    <div class="recommendation-content">
+                        <p>Los mejores restaurantes de Barcelona para disfrutar de la gastronomía local.</p>
+                        <a href="recomendaciones.html" class="explore-btn">Explora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h3>C&A<br><span class="footer-date">3 de enero 2026</span></h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-name">Coral</span>
+                            <span class="contact-phone">662 128 700</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-name">Alejandro</span>
+                            <span class="contact-phone">650 859 996</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Creado por C&A</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
