@@ -13,12 +13,35 @@
     box-sizing: border-box;
 }
 
+/* Prevent Safari from styling phone numbers as links */
+a[href^="tel:"] {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove Safari phone number styling */
+.contact-phone,
+.phone-number,
+.faq-answer p strong,
+.faq-answer p {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
     background: #ede9dd;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -91,6 +114,7 @@ h3 {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 .logo {
     font-family: 'Playfair Display', serif;
@@ -661,12 +685,18 @@ h3 {
     padding: 0;
 }
 
+/* Mobile margins for FAQ section */
+@media (max-width: 768px) {
+    .faq .container {
+        padding: 0 20px;
+    }
+}
+
 .faq h2 {
     font-family: 'Autography', 'Playfair Display', serif;
     font-weight: 100;
     margin-bottom: 3rem;
     color: #0b2218;
-    padding: 0 20px;
 }
 
 .faq-list {
@@ -993,6 +1023,7 @@ h3 {
         height: 35px;
     }
     
+    
     .nav-menu {
         display: none;
         position: absolute;
@@ -1053,7 +1084,7 @@ h3 {
     }
     
     .ceremony h2, .celebration h2 {
-        font-size: 4.2rem;
+        font-size: 6.5rem;
         font-weight: 400;
     }
     
@@ -1067,7 +1098,8 @@ h3 {
     }
     
     .schedule-item h3 {
-        font-size: 2rem;
+        font-size: 4rem;
+        font-weight: 400;
     }
     
     .schedule-item .time {
@@ -1096,7 +1128,7 @@ h3 {
     
     
     .faq-question h3 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1.2;
     }
     
@@ -1111,7 +1143,7 @@ h3 {
     }
     
     .gift h2 {
-        font-size: 4.2rem;
+        font-size: 6.2rem;
         font-weight: 400;
         line-height: 0.9;
         display: none;
@@ -1119,7 +1151,7 @@ h3 {
     
     .gift .mobile-title {
         display: block;
-        font-size: 4.2rem;
+        font-size: 6.2rem;
         font-weight: 400;
         line-height: 1.1;
         white-space: pre-line;
@@ -1168,7 +1200,7 @@ h3 {
     }
     
     .recommendation-category h3 {
-        font-size: 3.6rem;
+        font-size: 5.2rem;
         font-weight: 400;
     }
     
@@ -1178,7 +1210,7 @@ h3 {
     }
     
     .footer-main h3 {
-        font-size: 3rem;
+        font-size: 4.6rem;
         font-weight: 400;
         line-height: 1.2;
     }
@@ -1192,49 +1224,82 @@ h3 {
     /* Recommendations Page Mobile */
     .recommendations-section {
         padding: 3rem 0;
+        position: relative;
+    }
+    
+    .recommendations-section:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 2px;
+        background: #0e2e21;
+        border-radius: 1px;
     }
     
     .recommendations-section h2 {
         font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
     }
     
     .recommendation-item {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
         flex-direction: column;
         text-align: center;
-        padding-top: 3rem;
+        align-items: center;
+        position: relative;
     }
     
     .recommendation-number {
-        margin-right: 0;
-        margin-bottom: 1rem;
-        width: 35px;
-        height: 35px;
-        font-size: 1rem;
+        margin: 0 0 1.5rem 0;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        order: 1;
+    }
+    
+    .recommendation-content {
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
     }
     
     .recommendation-content h3 {
         font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
     }
     
     .recommendation-address,
     .recommendation-phone {
         font-size: 1rem;
+        text-align: center;
     }
     
     .recommendation-address {
         font-size: 0.9rem;
+        text-align: center;
     }
     
     .maps-btn {
-        width: 30px;
-        height: 30px;
-        top: 1.5rem;
-        right: 1rem;
+        width: 35px;
+        height: 35px;
+        margin-top: 1rem;
+        order: 3;
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .maps-btn i {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     
     .section-intro {
@@ -1338,7 +1403,7 @@ h3 {
     
     
     .faq-question h3 {
-        font-size: 1.2rem;
+        font-size: 2rem;
         line-height: 1.1;
     }
     

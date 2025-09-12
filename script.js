@@ -527,6 +527,7 @@ function submitToGoogleFormAlternative(data) {
     return Promise.resolve();
 }
 
+
 // Export functions for potential external use
 window.WeddingWebsite = {
     showMessage,
