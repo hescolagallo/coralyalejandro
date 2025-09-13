@@ -528,11 +528,20 @@ function submitToGoogleFormAlternative(data) {
 }
 
 
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 // Export functions for potential external use
 window.WeddingWebsite = {
     showMessage,
     copyToClipboard,
     validateForm,
     getGoogleFormIds,
-    submitToGoogleFormAlternative
+    submitToGoogleFormAlternative,
+    scrollToTop
 };
